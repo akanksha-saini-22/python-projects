@@ -1,0 +1,26 @@
+# Function to demonstrate string methods
+def demonstrate_string_methods(string):
+    print("Original String:", string)
+    print("1. Capitalize:", string.capitalize())
+    print("2. Uppercase:", string.upper())
+    print("3. Lowercase:", string.lower())
+    print("4. Swapcase:", string.swapcase())
+    print("5. Title:", string.title())
+    print("6. Count 'a':", string.count('a'))
+    print("7. Replace 'e' with 'X':", string.replace('e', 'X'))
+    print("8. Split at space:", string.split())
+    print("9. Split at 'o':", string.split('o'))
+    print("10. Strip leading and trailing spaces:", string.strip())
+    print("11. Is alphanumeric:", string.isalnum())
+    print("12. Is digit:", string.isdigit())
+    print("13. Is lowercase:", string.islower())
+    print("14. Is uppercase:", string.isupper())
+    print("15. Is titlecase:", string.istitle())
+    print("16. Join with '-' between characters:", '-'.join(string))
+    print("17. Length of the string:", len(string))
+
+# Example string
+example_string = "Hello, World! This is a sample string."
+
+# Demonstrate string methods
+demonstrate_string_methods(example_string)
