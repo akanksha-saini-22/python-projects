@@ -1,0 +1,22 @@
+def convert_to_uppercase(string):
+    """
+    Convert all lowercase letters in a string to uppercase using ASCII values.
+    
+    Args:
+    - string (str): The input string.
+    
+    Returns:
+    - str: The string with all lowercase letters converted to uppercase.
+    """
+    uppercase_string = ""
+    for char in string:
+        if 'a' <= char <= 'z':  # Check if the character is a lowercase letter
+            uppercase_string += chr(ord(char) - 32)  # Convert to uppercase using ASCII values
+        else:
+            uppercase_string += char  # Keep non-lowercase characters unchanged
+    return uppercase_string
+
+# Example usage:
+input_string = input("Enter a string: ")
+uppercase_string = convert_to_uppercase(input_string)
+print("String with all lowercase letters converted to uppercase using ASCII values:", uppercase_string)
