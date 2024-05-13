@@ -1,0 +1,19 @@
+def triangle_area(base, height):
+    """
+    Calculate the area of a triangle given its base and height.
+    
+    Args:
+    - base (float): The length of the base of the triangle.
+    - height (float): The height of the triangle (perpendicular to the base).
+    
+    Returns:
+    - float: The area of the triangle.
+    """
+    area = 0.5 * base * height
+    return area
+
+# Example usage:
+base_length = 5
+height_length = 8
+area = triangle_area(base_length, height_length)
+print("The area of the triangle with base", base_length, "and height", height_length, "is:", area)
